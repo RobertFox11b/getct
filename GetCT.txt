@@ -29,5 +29,5 @@ ForEach($List in $Lists)
     }
 }
 
-$ReportOutput = c:\temp\sharepoing_content_types.CSV
+$ReportOutput = c:\temp\sharepoint_content_types.CSV
 $ContentTypeUsage | export-csv $ReportOutput -NoTypeInformation
