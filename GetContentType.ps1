@@ -28,8 +28,7 @@ ForEach($List in $Lists)
         $ContentTypeUsage | Export-CSV $ReportOutput -NoTypeInformation -Append
     }
 }
-#$reportoutput = C:\\Temp\\SharePoint_Content_TypesNew.csv
-#$contenttypeusage | export-csv $ReportOutput -NoTypeInformation
+
 $ReportOutput = "c:\temp\CT.csv"
 $contenttypeusage = Get-PnpContentType -Identity "Identity of Content Type"
 $contenttypeusage | export-csv $ReportOutput -NoTypeInformation
